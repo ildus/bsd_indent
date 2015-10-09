@@ -992,11 +992,11 @@ check_type:
 	    ps.want_blank = (s_code != e_code);	/* only put blank after comma
 						 * if comma does not start the
 						 * line */
-	    if (ps.in_decl && is_procname == 0 && !ps.block_init)
+	    /*if (ps.in_decl && is_procname == 0 && !ps.block_init)
 		while ((e_code - s_code) < (dec_ind - 1)) {
 		    CHECK_SIZE_CODE;
 		    *e_code++ = ' ';
-		}
+		}*/
 
 	    *e_code++ = ',';
 	    if (ps.p_l_follow == 0) {
